@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PDF to Text Extractor</title>
+  <link rel="stylesheet" href="web.css">
+</head>
+<body>
+  <!-- Video Background -->
+  <div class="video-background">
+    <video autoplay muted loop id="background-video">
+      <source src="bg.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>PDF to Text Extractor</h1>
+    <textarea id="output" placeholder="Extracted text will appear here..."></textarea>
+
+    <!-- Saket Credit -->
+    <div class="credit-text">Made by Saket Saurabh</div>
+
+    <label for="file-upload" class="custom-file-upload">Choose PDF</label>
+    <input id="file-upload" type="file" accept=".pdf" />
+    <button id="extract-btn">Extract Text</button>
+    <button id="download-btn">Download Text</button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+  <script src="web.js"></script>
+</body>
+</html>
